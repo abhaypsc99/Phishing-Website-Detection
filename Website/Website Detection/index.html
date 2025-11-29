@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Phishing Website Detection</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>🔐 Phishing Website Detector</h1>
+    <p>Analyze URLs & web content for phishing risks.</p>
+
+    <div class="input-section">
+      <input type="text" id="urlInput" placeholder="Enter website URL">
+      <button onclick="analyzeURL()">Analyze</button>
+    </div>
+
+    <h3>🔎 Optional: Paste Website Content for Deeper Check</h3>
+    <textarea id="contentInput" placeholder="Paste website text here..."></textarea>
+
+    <button class="analyze-content" onclick="analyzeContent()">Analyze Content</button>
+
+    <div class="risk-meter">
+      <div id="risk-bar"></div>
+    </div>
+    <p id="risk-label">Risk: 0%</p>
+
+    <div id="result-box"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
